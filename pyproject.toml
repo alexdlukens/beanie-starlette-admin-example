@@ -1,0 +1,25 @@
+[project]
+name = "beanie-starlette-admin-example"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Alexander Lukens",email = "alexdlukens@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+dependencies = [
+    "fastapi (>=0.115.12,<0.116.0)",
+    "pydantic[email] (>=2.11.3,<3.0.0)",
+    "beanie (>=1.29.0,<2.0.0)",
+    "uvicorn[standard] (>=0.34.1,<0.35.0)",
+    "mongoengine (>=0.29.1,<0.30.0)",
+    "starlette-admin @ file:///home/alex/CodeSpaces/starlette-admin",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+starlette-admin = {develop = true}
