@@ -20,7 +20,7 @@ async def app_lifespan(app: FastAPI):
         DropDown(
             "Resources",
             icon="database",
-            views=[AdminLink(label="Catalogd Docs", url="/docs")],
+            views=[AdminLink(label="Docs", url="/docs")],
             always_open=False,
         )
     )
