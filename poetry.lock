@@ -743,7 +743,7 @@ test = ["aiomysql (>=0.1.1,<0.3.0)", "aiosqlite (>=0.17.0,<0.21.0)", "arrow (>=1
 type = "git"
 url = "https://github.com/alexdlukens/starlette-admin.git"
 reference = "beanie"
-resolved_reference = "9798a2ed4619e8c7e1afd782cbba5c3b7d00addb"
+resolved_reference = "a939657324c8c2374d7c0a65d6c35d953db30478"
 
 [[package]]
 name = "toml"

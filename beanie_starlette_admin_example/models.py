@@ -1,6 +1,9 @@
-from beanie import Document,Link
-from pydantic import Field, EmailStr, HttpUrl
 from enum import Enum
+from typing import Optional
+
+from beanie import Document, Link
+from pydantic import EmailStr, Field, HttpUrl, PastDate
+
 
 class Category(Enum):
     ELECTRONICS = "Electronics"
@@ -25,4 +28,5 @@ class Manager(Document):
     first_name: str = Field(min_length=3, max_length=50)
     last_name: str = Field(min_length=3, max_length=50)
     email: EmailStr
-    store: Link[Store]
+    birth_date: PastDate
+    store: Optional[Link[Store]]
